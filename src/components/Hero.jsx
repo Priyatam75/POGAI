@@ -5,6 +5,7 @@ import ButtonExplore from "./ButtonExplore";
 
 const Hero = () => {
   return (
+    <>
     <section id="home" className={`flex md:flex-row flex-col bg-[#092689]`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-16 sm:px-16 px-6 py-6`}>
         
@@ -37,6 +38,13 @@ const Hero = () => {
         {/* gradient end */}
       </div>
     </section>
+        <section id="semicircle" className={`flex md:flex-row flex-col bg-[#092689] min-h-[400px] `} style={{borderBottomLeftRadius: '50% 100%',
+    borderBottomRightRadius: '50% 100%'}}>
+
+        </section>
+        </>
+
+//rounded-b-[400px]
   );
 };
 
