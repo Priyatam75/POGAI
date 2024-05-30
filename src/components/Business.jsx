@@ -1,42 +1,54 @@
-import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
+import magnifyingGlassImage from "../assets/magnifyingglass.png";
+import recordsImage from "../assets/records.png";
+import connectImage from "../assets/connect.png";
 
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
-    </div>
-    <div className="flex-1 flex flex-col ml-3">
-      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
-        {title}
-      </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
-        {content}
-      </p>
-    </div>
-  </div>
-);
 
-const Business = () =>  (
-  <section id="features" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Unwell?, <br className="sm:block hidden" /> we’ll handle
-        the wait-times.
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right prognosis, you can improve your wait-times by
-        classifuing your symptoms, reducing your wait-times and improving your recovery experience.
-      </p>
+const Business = () => (
+  <section id="features" className={`${layout.section} justify-center items-start mt-10 bg-[#FDFEFF]`}>
+    <div className="flex flex-col sm:flex-row h-auto w-full text-center">
 
-      <Button />
-    </div>
+      <div id="FirstCard" className="flex-1 mb-4 sm:mb-0 sm:mr-1 grid grid-cols-3 ">
 
-    <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
+        <div className="flex items-center justify-center "></div>
+        <div className="flex items-center justify-center "> 
+          <img src={magnifyingGlassImage} alt="Magnifying Glass" style={{ width: '100%', height: '100%' }} /> 
+        </div>
+        <div className="flex items-center justify-center "></div>
+
+        <div className="flex items-center justify-center col-span-3 text-[#FF0000] font-bold text-2xl mt-6">Insights</div>
+        <div className="flex items-center justify-center col-span-3 text-xl mt-5 " style={{ alignItems: 'flex-start' }}>
+          Get AI-powered personalized diagnosis insights and recommendations
+        </div>
+      </div>
+
+      <div id="SecondCard" className="flex-1 mb-4 sm:mb-0 sm:mr-1 grid grid-cols-3">
+
+        <div className="flex items-center justify-center "></div>
+        <div className="flex items-center justify-center">
+          <img src={recordsImage} alt="Records" style={{ width: '100%', height: '80%' }} />
+        </div>
+        <div className="flex items-center justify-center "></div>
+
+        <div className="flex items-center justify-center col-span-3 text-[#FF0000] font-bold text-2xl">Medical Record</div>
+        <div className="flex items-center justify-center col-span-3 text-xl mt-5" style={{ alignItems: 'flex-start' }}>
+          Receive detailed medical records <br /> instantly
+        </div>
+      </div>
+
+      <div id="ThirdCard" className="flex-1 grid grid-cols-3">
+
+        <div className="flex items-center justify-center "></div>
+        <div className="flex items-center justify-center "> 
+          <img src={connectImage} alt="Connect" style={{ width: '100%', height: '80%' }} /> 
+        </div>
+        <div className="flex items-center justify-center "></div>
+
+        <div className="flex items-center justify-center col-span-3 text-[#FF0000] font-bold text-2xl ">Connect</div>
+        <div className="flex items-center justify-center col-span-3 text-xl mt-5" style={{ alignItems: 'flex-start' }}>
+          Input insurance details for instant access to in-network doctors.
+        </div>
+      </div>
     </div>
   </section>
 );
