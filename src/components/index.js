@@ -8,12 +8,14 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
-import InputPage from "./InputPage"
+import InputPage from "./InputPage";
+import ChooseCard from './ChooseUs'
 
 export {
   Navbar,
   Billing,
   CardDeal,
+  ChooseCard,
   Business,
   Clients,
   CTA,

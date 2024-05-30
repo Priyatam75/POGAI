@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Navbar, Hero, Business, CTA, Footer,Stats,Testimonials,CardDeal,Clients } from "./components";
+import { Navbar, Hero, Business, CTA, Footer,Stats,Testimonials,CardDeal,ChooseCard, Clients } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FinalPage from "./pages/FinalPage";
 
@@ -44,6 +44,13 @@ function App() {
           <div className={`${styles.boxWidth}`}>
             <Routes>
             <Route path="/" element={<CardDeal />} />
+            </Routes>
+          </div>
+        </div>
+        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Routes>
+            <Route path="/" element={<ChooseCard />} />
             </Routes>
           </div>
         </div>
