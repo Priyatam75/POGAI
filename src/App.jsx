@@ -54,7 +54,7 @@ function App() {
             </Routes>
           </div>
         </div>
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`bg-primary  ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Routes>
             <Route path="/" element={<Footer />} />

@@ -88,65 +88,45 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "COMPANY",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "About Us",
+        link: "/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Careers",
+        link: "/",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "RESOURCES",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Support Center",
+        link: "/",
       },
       {
-        name: "Become a Partner",
-        link: "https://www..com/become-a-partner/",
+        name: "Customer Data",
+        link: "/",
+      },
+      {
+        name: "Documents",
+        link: "/",
+      },
+    ],
+  },
+  {
+    title: "PRIVACY POLICY",
+    links: [
+      {
+        name: "Your privacy is important to us. We adhere to strict privacy standards and protocols to safeguard your data. For more details, please refer to our Privacy Policy.",
+        link: "/",
       },
     ],
   },
