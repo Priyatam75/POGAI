@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-import Button from "./Button";
+import Button from "./tools/Button";
 
 const InputPage = () => (
   <div>

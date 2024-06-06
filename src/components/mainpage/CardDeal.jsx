@@ -1,8 +1,8 @@
-import styles, { layout } from "../style";
-import SymptomImage from "../assets/symptom.png";
-import AnalyticImage from "../assets/analytics.png";
-import MedRecordsImage from "../assets/medrecords.png";
-import DoctorImage from "../assets/doctor.png";
+import styles, { layout } from "../../style";
+import SymptomImage from "../../assets/symptom.png";
+import AnalyticImage from "../../assets/analytics.png";
+import MedRecordsImage from "../../assets/medrecords.png";
+import DoctorImage from "../../assets/doctor.png";
 
 const CardDeal = () => (
   <section className={`${layout.section} bg-[#FDFEFF] p-1 pb-5 rounded-2xl shadow-2xl`}>

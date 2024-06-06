@@ -1,7 +1,7 @@
-import styles, { layout } from "../style";
-import DoctorBadge from "../assets/doctorbadge.png";
-import DoctorNote from "../assets/doctornote.png";
-import ButtonCTA from "./ButtonCTA";
+import styles, { layout } from "../../style";
+import DoctorBadge from "../../assets/doctorbadge.png";
+import DoctorNote from "../../assets/doctornote.png";
+import ButtonCTA from "../tools/ButtonCTA";
 
 const CTA = () => (
   <section id="features" className={`${layout.section} justify-center items-start mt-10 mb-12 `}>

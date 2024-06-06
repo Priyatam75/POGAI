@@ -1,7 +1,7 @@
-import styles, { layout } from "../style";
-import magnifyingGlassImage from "../assets/magnifyingglass.png";
-import recordsImage from "../assets/records.png";
-import connectImage from "../assets/connect.png";
+import styles, { layout } from "../../style";
+import magnifyingGlassImage from "../../assets/magnifyingglass.png";
+import recordsImage from "../../assets/records.png";
+import connectImage from "../../assets/connect.png";
 
 
 const Business = () => (

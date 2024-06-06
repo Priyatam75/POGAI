@@ -1,5 +1,5 @@
-import styles, { layout } from "../style";
-import RobotNurseImage from "../assets/robotnurse.png";
+import styles, { layout } from "../../style";
+import RobotNurseImage from "../../assets/robotnurse.png";
 
 const ChooseCard = () => (
   <section className={`${layout.section} bg-[#FDFEFF] p-1 rounded-2xl shadow-2xl mt-12 mb-12`}>

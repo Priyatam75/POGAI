@@ -2,6 +2,7 @@ import styles from "./style";
 import { Navbar, Hero, Business, CTA, Footer,Stats,Testimonials,CardDeal,ChooseCard, Clients } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FinalPage from "./pages/FinalPage";
+import Diagnosis from "./pages/Diagnosis";
 
 function App() {
   return (
@@ -65,6 +66,9 @@ function App() {
       
       <Routes>
         <Route exact path="/inputpage" element={<FinalPage />} />
+      </Routes>
+      <Routes>
+        <Route exact path="/diagnosis" element={<Diagnosis />} />
       </Routes>
     </Router>
   );

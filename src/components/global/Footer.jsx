@@ -1,16 +1,17 @@
-import styles from "../style";
-import { prognostic } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import styles from "../../style";
+import { prognostic } from "../../assets";
+import { footerLinks, socialMedia } from "../../constants";
 
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col bg-[#092689]`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-14 `}>
-      <div className=" flex flex-col justify-start ">
-        <img
+      <div className=" flex flex-col pl-5 justify-center text-[20px] text-[#FDFEFF] w-[100px] h-[90px] ">
+        POGAI
+        {/* <img
           src={prognostic}
           alt="hoobank"
           className="w-[200px] h-[130px] object-contain"
-        />
+        /> */}
       </div>
 
       <div className="flex-[1.5] w-full flex flex-row justify-between md:mt-0 mt-10 pt-8">
@@ -33,7 +34,7 @@ const Footer = () => (
                 ) : (
                   <li
                     key={link.name}
-                    className={`font-poppins font-normal text-[20px] leading-[24px] text-[#6C7A91] hover:text-secondary cursor-pointer text-center ${
+                    className={`font-poppins font-normal text-[20px] leading-[24px] text-[#6C7A91] hover:text-primary cursor-pointer text-center ${
                       index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                     }`}
                   >

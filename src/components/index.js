@@ -1,15 +1,16 @@
-import Navbar from "./Navbar";
+import Navbar from "./global/Navbar";
 import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Business from "./Business";
+import CardDeal from "./mainpage/CardDeal";
+import Business from "./mainpage/Business";
 import Clients from "./Clients";
-import CTA from "./CTA";
+import CTA from "./mainpage/CTA";
 import Stats from "./Stats";
-import Footer from "./Footer";
+import Footer from "./global/Footer";
 import Testimonials from "./Testimonials";
-import Hero from "./Hero";
+import Hero from "./mainpage/Hero";
 import InputPage from "./InputPage";
-import ChooseCard from './ChooseUs'
+import ChooseCard from './mainpage/ChooseUs';
+import Checker from './diagnosispage/Checker';
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Testimonials,
   Hero,
   InputPage,
+  Checker
 };
