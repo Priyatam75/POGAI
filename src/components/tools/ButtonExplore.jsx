@@ -7,7 +7,7 @@ function ButtonExplore() {
   return (
     <button 
       type="button" 
-      onClick={() => { navigate("/inputpage") }}
+      onClick={() => { navigate("/diagnosis") }}
       className={`py-4 px-10 font-poppins font-medium text-[18px] text-primary bg-[#FF0031] rounded-full outline-none mt-10 ml-10`}>
       EXPLORE NOW
     </button>

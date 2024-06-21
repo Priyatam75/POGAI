@@ -1,5 +1,6 @@
+import React from 'react'
 import styles from "./style";
-import { Navbar, Hero, Business, CTA, Footer,Stats,Testimonials,CardDeal,ChooseCard, Clients } from "./components";
+import { Navbar, Hero, Business, CTA, Footer,Stats,Testimonials,CardDeal,ChooseCard } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FinalPage from "./pages/FinalPage";
 import Diagnosis from "./pages/Diagnosis";
@@ -11,7 +12,7 @@ function App() {
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
           <Routes>
-            <Route path="/" element={<Navbar />} />
+            <Route path="/" element={<Navbar data-testid="navbar-element" />} />
           </Routes>
           </div>
         </div>
@@ -19,7 +20,7 @@ function App() {
         <div className={`bg-primary ${styles.flexStart}`}>
           <div className={`${styles.boxWidth}`}>
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<Hero data-testid="hero-element" />} />
           </Routes>
           </div>
         </div>

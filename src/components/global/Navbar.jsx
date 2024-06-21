@@ -1,19 +1,24 @@
 import { useState } from "react";
-
+import { useNavigate } from 'react-router-dom';
 import { close, prognostic, menu } from "../../assets";
 import { navLinks } from "../../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-
+  const navigate = useNavigate(); 
   // bg color: FEFEFE
   // register color: FF0031
 
   return (
-    <nav className="w-full flex justify-between items-center navbar bg-[#FEFEFE]">
+    <nav data-testid="nav-1" className="w-full flex justify-between items-center navbar bg-[#FEFEFE]">
       {/* photo */}
-      <img src={prognostic} alt="hoobank" className="w-[150px] h-[150px]" />
+      <img 
+        src={prognostic} 
+        alt="Prognostic Nav Image" 
+        className="w-[150px] h-[150px] cursor-pointer" 
+        onClick={() => navigate("/")} // Add the onClick handler to navigate to the root
+      />
 
     {/* nav elements */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
