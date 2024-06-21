@@ -1,6 +1,6 @@
-import styles from "../style";
-import { discount, robot } from "../assets";
-import ButtonExplore from "./ButtonExplore";
+import styles from "../../style";
+import { discount, robot } from "../../assets";
+import ButtonExplore from "../tools/ButtonExplore";
 
 
 const Hero = () => {

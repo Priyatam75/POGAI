@@ -1,9 +1,13 @@
-import styles, { layout } from "../style";
-import DoctorBadge from "../assets/doctorbadge.png";
-import DoctorNote from "../assets/doctornote.png";
-import ButtonCTA from "./ButtonCTA";
+import styles, { layout } from "../../style";
+import DoctorBadge from "../../assets/doctorbadge.png";
+import DoctorNote from "../../assets/doctornote.png";
+import ButtonCTA from "../tools/ButtonCTA";
+import { useNavigate } from 'react-router-dom';
 
-const CTA = () => (
+const CTA = () => {
+  const navigate = useNavigate();
+
+  return (
   <section id="features" className={`${layout.section} justify-center items-start mt-10 mb-12 `}>
 
     <div className="flex flex-col h-[900px] sm:flex-row sm:h-[450px] lg:h-[500px] w-full text-center p-2 ">
@@ -21,7 +25,7 @@ const CTA = () => (
         </div>
 
         <div className="flex items-center justify-center "> 
-          <ButtonCTA ButtonName="TRY NOW" ButtonBgColor="#FF0031" ButtonFunc={() => { console.log("Button clicked!"); }} />
+          <ButtonCTA ButtonName="TRY NOW" ButtonBgColor="#FF0031" ButtonFunc={() => navigate("/diagnosis")} ButtonTextColor="#FDFEFF"  />
         </div>
       </div>
 
@@ -40,7 +44,7 @@ const CTA = () => (
 
 
         <div className="flex items-center justify-center"> 
-          <ButtonCTA ButtonName="GET DIAGNOSIS" ButtonBgColor="#092689" ButtonFunc={() => { console.log("Button clicked!"); }} />
+          <ButtonCTA ButtonName="GET DIAGNOSIS" ButtonBgColor="#092689" ButtonFunc={() => navigate("/diagnosis")} ButtonTextColor="#FDFEFF" />
         </div>
 
       </div> 
@@ -50,7 +54,8 @@ const CTA = () => (
 
 
   </section>
-);
+)
+};
 
 export default CTA;
 
