@@ -4,6 +4,8 @@ import diagnosisImage from "../../assets/diagnosis.png";
 import SymptomCheckerImage from "../../assets/symptomchecker.png";
 import ButtonCTA from "../tools/ButtonCTA";
 
+
+
 const Checker = () => {
   const [symptoms, setSymptoms] = useState('');
 
@@ -11,8 +13,28 @@ const Checker = () => {
     setSymptoms(event.target.value);
   };
 
-  const handleButtonClick = () => {
+   const handleButtonClick = async () => {
     console.log("Button clicked! Symptoms:", symptoms);
+    try {
+      const response = await fetch('http://localhost:5000/add_prompt', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${localStorage.getItem('jwtToken')}` // Assuming the JWT token is stored in localStorage
+        },
+        body: JSON.stringify({ query: symptoms })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Prompt added successfully", data);
+      } else {
+        const errorData = await response.json();
+        console.error("Error adding prompt:", errorData);
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+    }
   };
 
 
