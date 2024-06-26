@@ -96,7 +96,7 @@ def predict_disease(text_data):
  # DATABASE CODE
  
 # Configure the SQLAlchemy part of the app instance
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:whatis3life@localhost/PogAI'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:{ENV}@localhost/{ENV}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(16))
 app.config['JWT_TOKEN_LOCATION'] = ['headers']
